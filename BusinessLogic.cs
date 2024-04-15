@@ -14,7 +14,7 @@ public static class BusinessLogic
     
         var jsonObject = JObject.Parse(response); 
         var productList = jsonObject["productList"];
-        List<Product> products = []; 
+        List<Product> products = new();
 
         foreach (var product in productList.Take(5)) 
         {
